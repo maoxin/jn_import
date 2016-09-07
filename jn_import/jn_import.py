@@ -10,8 +10,6 @@ def find_notebook(fullname, path=None):
     """
     find a notebook, given its fully qualified name and an optional path
     """
-    print("path in find_notebook: {}".format(path))
-    print("fullname in find_notebook: {}".format(fullname))
     name = fullname.rsplit('.', 1)[-1]
     if not path:
         path = ['']
@@ -27,16 +25,12 @@ class NotebookLoader(object):
     """
 
     def __init__(self, path=None):
-        print("path in Loader: {}".format(path))
         self.shell = InteractiveShell.instance()
         self.path = path
 
     def load_module(self, fullname):
         """import a notebook as a module"""
         path = find_notebook(fullname, self.path)
-        print("fullname in Loader: {}".format(fullname))
-
-        print("importing Jupyter notebook from {}".format(path))
 
         # load the notebook object
         with open(path, 'r', encoding='utf-8') as f:
@@ -75,8 +69,6 @@ class NotebookFinder(object):
         self.loaders = {}
 
     def find_module(self, fullname, path=None):
-        print('path in Finder: {}'.format(path))
-        print("fullname in Finder: {}".format(fullname))
         nb_path = find_notebook(fullname, path)
         if not nb_path:
             return

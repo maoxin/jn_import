@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='jn_import',
-      version='0.1',
+      version='0.3',
       description='Jupyter Notebooks Importing Tools',
       url='https://github.com/maoxin/jn_import',
       download_url='https://github.com/maoxin/jn_import/tarball/0.1',
