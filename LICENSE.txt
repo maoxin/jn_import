@@ -1,22 +1,3 @@
-# jn_import
-Jupyter Notebooks Importing Tools
-
-```python
-import jn_import # import this module first
-import notebook1, notebook2, ... # then you can import Jupyter/Ipython notebook files (notebook1.ipynb, notebook2.ipynb, ...)
-```
-
-## Installation
-```shell
-$ pip install jn_import
-```
-
-## Intellectual Property
-This Module uses [Python hooks importing machinery](http://www.python.org/dev/peps/pep-0302/ "hooks") to help importing Jupyper/Ipython notebook files (.ipynb) as modules in Python scripts.
-
-[Jupyter Notbook Document](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Importing%20Notebooks.html#Importing-Jupyter-Notebooks-as-Modules "Jupyter Notbook Document") offers the method.
-
-## License
 The MIT License (MIT)
 
 Copyright (c) 2016 Mao, Xin
