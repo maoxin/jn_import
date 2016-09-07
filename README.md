@@ -2,7 +2,7 @@
 Jupyter Notebooks Importing Tools
 
 ```python
-import jn_import # import this module first
+from jn_import import jn_import # import this module first
 import notebook1, notebook2, ... # then you can import Jupyter/Ipython notebook files (notebook1.ipynb, notebook2.ipynb, ...)
 ```
 
